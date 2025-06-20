@@ -1,0 +1,10 @@
+.logo-vertical {
+  height: 32px;
+  margin: 16px;
+  background: rgba(252, 251, 251, 0.2);
+  color: #fff;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 1.2em;
+  padding-top: 4px;
+}

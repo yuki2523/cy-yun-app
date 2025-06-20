@@ -1,0 +1,14 @@
+[Unit]
+Description=Aliyun Oss Access Service
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/oss-control-service
+ExecStart=/usr/bin/node /root/oss-control-service/index.js
+Restart=always
+Environment=NODE_ENV=production
+Environment=PORT=8081
+
+[Install]
+WantedBy=multi-user.target

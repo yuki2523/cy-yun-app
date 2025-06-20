@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>文件分享</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: #f5f6fa;
+            font-family: "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 420px;
+            margin: 60px auto;
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 36px 28px 32px 28px;
+            text-align: center;
+        }
+        .title {
+            font-size: 1.5rem;
+            color: #222;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+        .desc {
+            color: #666;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            line-height: 1.7;
+        }
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #4f8cff 0%, #3ad6b7 100%);
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 500;
+            border: none;
+            border-radius: 6px;
+            padding: 12px 36px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s;
+            margin-top: 10px;
+        }
+        .download-btn:hover {
+            background: linear-gradient(90deg, #3ad6b7 0%, #4f8cff 100%);
+        }
+        .error {
+            color: #e74c3c;
+            font-size: 1.1rem;
+            margin-bottom: 18px;
+        }
+        @media (max-width: 500px) {
+            .container {
+                margin: 20px 8px;
+                padding: 20px 8px 18px 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% if temp_url %}
+            <div class="title">文件分享</div>
+            <div class="desc">{{ message }}</div>
+            <a class="download-btn" href="{{ temp_url|safe }}" download>点击下载文件</a>
+        {% else %}
+            <div class="title">文件分享</div>
+            <div class="error">{{ message }}</div>
+        {% endif %}
+    </div>
+</body>

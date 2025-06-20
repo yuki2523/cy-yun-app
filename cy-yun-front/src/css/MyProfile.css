@@ -1,0 +1,48 @@
+.content-label-small {
+  height: 3rem;
+  width: 12rem;
+  font-size: 1.5em;
+}
+
+.content-label {
+  height: 3rem;
+  width: 15rem;
+  font-size: 1.8em;
+}
+
+.content-detail-small {
+  height: 3rem;
+  width: 30rem;
+  font-size: 1.5em;
+  margin-left: 1rem;
+}
+
+.content-detail {
+  height: 3rem;
+  width: 60rem;
+  font-size: 1.8em;
+  margin-left: 1rem;
+}
+
+.content-detail-long-small {
+  height: 11.5rem;
+  width: 30rem;
+  font-size: 1.5em;
+  margin-left: 1rem;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.content-detail-long {
+  height: 9rem;
+  width: 60rem;
+  font-size: 1.8em;
+  margin-left: 1rem;
+  overflow-wrap: break-word;
+  word-break: break-all;
+}
+
+.table-btn {
+  width: 3rem;
+  font-size: 0.7rem;
+}
