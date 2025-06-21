@@ -195,7 +195,7 @@ CREATE INDEX idx_system_config_config_key ON system_config(config_key);
     - [kkFileView](https://github.com/kekingcn/kkFileView) ：`GitHub Page`
     - [kkFileView官网](https://kkview.cn/zh-cn/index.html) ：`kkFileView`官网
 
-![img](云笔记网盘应用.assets/626c987a-f5d9-4860-85af-9dc481415c79.png)  
+![img](626c987a-f5d9-4860-85af-9dc481415c79.png)  
 
 ## 4 微服务端API设计
 
